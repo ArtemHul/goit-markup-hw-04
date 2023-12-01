@@ -120,7 +120,8 @@ h1, h2, h3, h4, h5, h6, p {
         display: block;
         width: 48px;
         height: 4px;
-        background-color: #404BBF;}
+        background-color: #404BBF;
+        position: absolute;}
 /* MAIN PAGE--======================= */
 
         .main-page{
@@ -186,6 +187,9 @@ h1, h2, h3, h4, h5, h6, p {
     overflow: hidden;
 }
 
+.benefits {padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff;}
 
     .benefits-item{
         display: flex;
@@ -202,6 +206,7 @@ h1, h2, h3, h4, h5, h6, p {
         align-items: center;
         justify-content: center;
         background-size:contain;
+        margin-bottom: 8px;
     }
 
         .text-title { 
@@ -260,12 +265,36 @@ h1, h2, h3, h4, h5, h6, p {
         .list-workers-div{padding: 32px 0;}
 
         .position-text{color: #434455;
-            
             font-size: 16px;
             font-weight: 400;
             line-height: 1.5; /* 150% */
             letter-spacing: 0.02em;
             text-align: center;}
+
+        .social-link{
+            display: flex;
+            justify-content: center;
+            gap: 24px;}
+        
+        .social-page{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;}
+
+        .link-social-page{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+        .portfolio {
+            background-color: #ffffff;
+            padding-top: 120px;
+            padding-bottom: 120px;}
 
         .text-portfolio{color:  #2E2F42;
             text-align: center;
@@ -282,6 +311,23 @@ h1, h2, h3, h4, h5, h6, p {
             gap: 24px;
             row-gap: 48px;}
 
+        .overley-photo{
+            position: relative;
+            overflow: hidden;}
+
+        .overley{
+            color: #f4f4fd;
+            background-color: #4d5ae5;
+            letter-spacing: 0.02em;
+            padding: 40px 32px;
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 100%;
+            transform: translateY(100%);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+
         .portfol-foto-div{
             padding: 32px 16px;
             border: 1px solid #e7e9fc;
@@ -290,7 +336,16 @@ h1, h2, h3, h4, h5, h6, p {
 
         .portfolio-foto {
             background-color: #fff;
-            width: calc((100% - 48px) / 3);}
+            width: calc((100% - 48px) / 3);
+            overflow: hidden;
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+            .portfolio-foto:hover .overley {
+                transform: translateY(0%);
+
+            .portfolio-foto:hover {
+                box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+                cursor: pointer;}
 
         .app-main{
             margin-bottom: 8px;
@@ -335,13 +390,5 @@ h1, h2, h3, h4, h5, h6, p {
         display: inline-block;}
 
 
-        .benefits {padding-top: 120px;
-            padding-bottom: 120px;
-            background-color: #fff;}
-
-        
 
 
-        .portfolio {background-color: #ffffff;
-            padding-top: 120px;
-            padding-bottom: 120px;}
