@@ -97,6 +97,9 @@ h1, h2, h3, h4, h5, h6, p {
         margin-right: 76px;
         }
 
+    .span-studio{
+        color:#404BBF;}
+
     .web{ color:#4d5ae5;
         font-family: Raleway;
         font-size: 18px;
@@ -112,6 +115,12 @@ h1, h2, h3, h4, h5, h6, p {
             gap: 40px;
             }
 
+    .home-studio::after{
+        content: "";
+        display: block;
+        width: 48px;
+        height: 4px;
+        background-color: #404BBF;}
 /* MAIN PAGE--======================= */
 
         .main-page{
