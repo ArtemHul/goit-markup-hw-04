@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6, p {
             line-height: 1.5; /* 150% */
             letter-spacing: 0.02em;}
 
-
+                /* <--!--SECTION----------> */
         .team-list{
             display: flex;
             gap: 24px;}
@@ -285,6 +285,7 @@ h1, h2, h3, h4, h5, h6, p {
             margin-bottom: 8px}
 
         .list-workers-div{padding: 32px 0;}
+
 
         .position-text{color: #434455;
             font-size: 16px;
